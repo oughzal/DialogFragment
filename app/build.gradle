@@ -7,6 +7,10 @@ android {
     namespace 'com.omarcomputer.dialogfragment'
     compileSdk 33
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.omarcomputer.dialogfragment"
         minSdk 30

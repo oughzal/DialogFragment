@@ -15,12 +15,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dateText : TextView
     private lateinit var btnDate : Button
     private lateinit var btnTime : Button
+    private lateinit var btnShowAlert : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         dateText = findViewById(R.id.dateText)
         btnDate = findViewById(R.id.btnDate)
         btnTime = findViewById(R.id.btnTime)
+        btnShowAlert = findViewById(R.id.btnShowAlert)
         btnDate.setOnClickListener {
             val today = LocalDate.now()
             val datePick =DatePickerDialog(this,{ datePicker: DatePicker, year: Int, month: Int, day: Int ->
